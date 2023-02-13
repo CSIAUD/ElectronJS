@@ -1,3 +1,4 @@
+if (require('electron-squirrel-startup')) app.quit();
 const { app, BrowserWindow, ipcMain, nativeTheme, Notification, shell } = require('electron');
 const path = require('path');
 const { dialog } = require('electron');
