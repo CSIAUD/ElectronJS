@@ -1,0 +1,87 @@
+:root{
+    --bg-body: rgb(20, 138, 211);
+    --bg-div: #f1f1f1;
+    --bg-button: rgb(173, 180, 33);
+    --txt: #111;
+
+    --bg-body-dark : #111;
+    --bg-div-dark: #5a5a5a;
+    --bg-button-dark: rgb(173, 180, 33);
+    --txt-dark: #f1f1f1;
+}
+
+body{
+    background-color: var(--bg-body);
+    color: var(--txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 16px);
+    width: 100wv;
+}
+
+body, body *{
+    transition: all .15s linear;
+}
+
+.inner{
+    background-color: var(--bg-div);
+    width: 75%;
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 25px;
+    gap: 15px;
+}
+.inner svg {
+    width: 50px;
+}
+.inner button{
+    background-color: var(--bg-button);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+.inner div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bg-body-dark);
+        color: var(--txt-dark);
+    }
+
+    .inner {
+        background-color: var(--bg-div-dark);
+    }
+
+    .inner button{
+        background-color: var(--bg-button-dark);
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--bg-body);
+        color: var(--txt);
+    }
+
+    .inner {
+        background-color: var(--bg-div);
+    }
+
+    .inner button{
+        background-color: var(--bg-button);
+    }
+}

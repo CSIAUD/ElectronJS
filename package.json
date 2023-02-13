@@ -1,0 +1,22 @@
+{
+  "name": "electronjs",
+  "version": "1.0.0",
+  "description": "tp electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.5",
+    "electron": "^23.0.0",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "pngquant-bin": "^6.0.1"
+  }
+}
