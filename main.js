@@ -1,5 +1,5 @@
-if (require('electron-squirrel-startup')) app.quit();
 const { app, BrowserWindow, ipcMain, nativeTheme, Notification, shell } = require('electron');
+if (require('electron-squirrel-startup')) app.quit();
 const path = require('path');
 const { dialog } = require('electron');
 const {execFile} = require('child_process');
@@ -28,7 +28,7 @@ try {
 // Mettre le logiciel en dark mode : ☑️
 // Faire une barre de progression jusqu’à la fin de progression des fichiers : ☑️
 // Créer une notification quand les images ont été compressé : ☑️
-// Build le projet pour créer un installer : ⬛
+// Build le projet pour créer un installer : ☑️
 
 // let progressInterval
 

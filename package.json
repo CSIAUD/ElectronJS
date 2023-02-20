@@ -9,7 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "author": "Cypein Siaud & Matéo Palmieri",
+  "author": "Cyprien Siaud & Matéo Palmieri",
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.5",
